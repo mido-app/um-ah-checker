@@ -20,6 +20,7 @@ export default {
   created () {
     this.recognition = new webkitSpeechRecognition()
     this.recognition.lang = 'ja'
+    this.recognition.continuous = true
     this.recognition.onresult = this.onRecognitionFinished
   },
   methods: {
@@ -30,14 +31,17 @@ export default {
      this.recognition.stop()
    },
    onRecognitionFinished (e) {
+    console.log(e)
+    let sentenses = []
     for (let i=0; i<e.results.length; i++) {
       let result = e.results[i]
       for (let j=0; j<result.length; j++) {
         let alternative = result[j]
         console.log(alternative)
-        this.sentenses.push(alternative.transcript)
+        sentenses.push(alternative.transcript)
       }
     }
+    this.sentenses = sentenses
    }
   }
 }
