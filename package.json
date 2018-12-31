@@ -1,0 +1,23 @@
+{
+  "name": "um-ah-checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mido-app/um-ah-checker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mido-app/um-ah-checker/issues"
+  },
+  "homepage": "https://github.com/mido-app/um-ah-checker#readme",
+  "dependencies": {
+    "nuxt": "^2.3.4"
+  }
+}
