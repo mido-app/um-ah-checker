@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/mido-app/um-ah-checker#readme",
   "dependencies": {
+    "kuromoji": "^0.1.2",
     "nuxt": "^2.3.4"
   }
 }
